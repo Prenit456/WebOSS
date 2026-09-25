@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>pixelOS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="night">
+  <div id="topbar">
+    <div class="tb-left">
+      <span id="brand">pixelOS</span>
+      <span class="tb-item" id="menu-about">about</span>
+      <span class="tb-item" id="menu-notes">notes</span>
+      <span class="tb-item" id="menu-links">links</span>
+      <span class="tb-item" id="menu-term">terminal</span>
+    </div>
+    <div class="tb-right">
+      <div id="themes">
+        <button class="tbtn" data-theme="night" title="night"></button>
+        <button class="tbtn" data-theme="mint" title="mint"></button>
+        <button class="tbtn" data-theme="sunset" title="sunset"></button>
+        <button class="tbtn" data-theme="paper" title="paper"></button>
+      </div>
+      <span id="clock">--:--</span>
+    </div>
+  </div>
+
+  <div id="desktop"></div>
+
+  <div class="win" id="win-about">
+    <div class="win-bar">
+      <span class="win-title">about.txt</span>
+      <span class="win-x">&times;</span>
+    </div>
+    <div class="win-body">
+      <div class="about-row">
+        <div class="avatar"></div>
+        <div>
+          <h1>hi, welcome in :)</h1>
+          <p>this is my personal operating system. it lives in a browser tab and one day it will have <strong>windows</strong> and everything.</p>
+        </div>
+      </div>
+      <p><s>todo: add an actual os</s> done kind of &nbsp; <abbr title="work in progress">wip</abbr></p>
+      <p>things i like: lo-fi playlists, capybaras, staying up too late coding.</p>
+      <p>
+        <a href="https://open.spotify.com/">my playlist</a> ·
+        <a href="https://github.com/">github</a> ·
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">definitely not a rickroll</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="win" id="win-notes">
+    <div class="win-bar">
+      <span class="win-title">notes</span>
+      <span class="win-x">&times;</span>
+    </div>
+    <div class="win-body">
+      <textarea id="notepad" placeholder="type here, it saves by itself"></textarea>
+      <div class="note-foot"><span id="note-status">autosaves when you type</span></div>
+    </div>
+  </div>
+
+  <div class="win" id="win-links">
+    <div class="win-bar">
+      <span class="win-title">links</span>
+      <span class="win-x">&times;</span>
+    </div>
+    <div class="win-body">
+      <a class="linktile" href="https://open.spotify.com/"><b>my playlist</b><small>lo-fi &amp; whatever else</small></a>
+      <a class="linktile" href="https://github.com/"><b>github</b><small>where the code goes</small></a>
+      <a class="linktile" href="https://capybara.org/"><b>capybaras</b><small>important research</small></a>
+    </div>
+  </div>
+
+  <div class="win" id="win-term">
+    <div class="win-bar">
+      <span class="win-title">terminal</span>
+      <span class="win-x">&times;</span>
+    </div>
+    <div class="win-body">
+      <div id="term-out"></div>
+      <div id="term-line">
+        <span class="prompt">visitor@pixelos:~$</span>
+        <input id="term-in" autocomplete="off" spellcheck="false">
+      </div>
+    </div>
+  </div>
+
+  <script charset="utf-8" src="script.js"></script>
+  <script charset="utf-8" src="notes.js"></script>
+  <script charset="utf-8" src="terminal.js"></script>
+  <script charset="utf-8" src="theme.js"></script>
+</body>
+</html>
