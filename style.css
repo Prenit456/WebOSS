@@ -222,7 +222,7 @@ a:hover { text-decoration: underline; }
   font-family: 'JetBrains Mono', monospace;
   font-size: 13px;
   padding: 10px;
-  outline: none;
+  outline: none; 
 }
 #notepad:focus { border-color: var(--accent); }
 
@@ -266,3 +266,4 @@ a:hover { text-decoration: underline; }
   color: var(--text);
   font: inherit;
 }
+ 
